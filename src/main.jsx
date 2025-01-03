@@ -8,15 +8,15 @@ import Navbar from "./Components/NavBar.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/Portfolio", // This will be the main entry point
-    element: <App />, // This is the root element for /Portfolio
+    path: "/Portfolio", 
+    element: <App />, 
     children: [
-      { path: "navbar", element: <Navbar /> }, // Child route for /Portfolio/navbar
-      { path: "skills", element: <Skills /> }, // Child route for /Portfolio/skills
+      { path: "navbar", element: <Navbar /> }, 
+      { path: "skills", element: <Skills /> }, 
     ],
   },
   {
-    path: "/hello", // A separate route /hello
+    path: "/hello", 
     element: <Skills />,
   },
 ]);
