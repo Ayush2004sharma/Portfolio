@@ -8,16 +8,19 @@ import Navbar from "./Components/NavBar.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
+    path: "/Portfolio", // This will be the main entry point
+    element: <App />, // This is the root element for /Portfolio
     children: [
-      { path: "/navbar", element: <Navbar/> },
-      { path: "/skills", element: <Skills /> },
+      { path: "navbar", element: <Navbar /> }, // Child route for /Portfolio/navbar
+      { path: "skills", element: <Skills /> }, // Child route for /Portfolio/skills
     ],
   },
-  {path:"/hello",element:<Skills/>}
-  ,
+  {
+    path: "/hello", // A separate route /hello
+    element: <Skills />,
+  },
 ]);
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
