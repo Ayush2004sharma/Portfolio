@@ -8,7 +8,7 @@ const Navbar = ({ selectedTab, setSelectedTab }) => {
       <div className="navbar-items flex flex-wrap space-x-6 md:space-x-14 w-full md:w-3/5 justify-center md:mt-0">
         <div>
           <a
-            href="#"
+            href="/home"
             onClick={() => setSelectedTab("Home")}
             className={`text-black font-bold no-underline hover:text-blue-600 hover:underline hover:decoration-2 hover:underline-offset-4 ${
               selectedTab === "Home" ? "text-red-500" : ""
@@ -19,7 +19,7 @@ const Navbar = ({ selectedTab, setSelectedTab }) => {
         </div>
         <div>
           <a
-            href="#"
+            href="/about"
             onClick={() => setSelectedTab("About")}
             className={`text-black font-bold no-underline hover:text-blue-600 hover:underline hover:decoration-2 hover:underline-offset-4 ${
               selectedTab === "About" ? "text-green-500" : ""
@@ -30,7 +30,7 @@ const Navbar = ({ selectedTab, setSelectedTab }) => {
         </div>
         <div>
           <a
-            href="#"
+            href="/skills"
             onClick={() => setSelectedTab("Skills")}
             className={`text-black font-bold no-underline hover:text-blue-600 hover:underline hover:decoration-2 hover:underline-offset-4 ${
               selectedTab === "Skills" ? "text-blue-500" : ""
@@ -41,7 +41,7 @@ const Navbar = ({ selectedTab, setSelectedTab }) => {
         </div>
         <div>
           <a
-            href="#"
+            href="/education"
             onClick={() => setSelectedTab("Education")}
             className={`text-black font-bold no-underline hover:text-blue-600 hover:underline hover:decoration-2 hover:underline-offset-4 ${
               selectedTab === "Education" ? "text-purple-500" : ""
@@ -52,7 +52,7 @@ const Navbar = ({ selectedTab, setSelectedTab }) => {
         </div>
         <div>
           <a
-            href="#"
+            href="/work"
             onClick={() => setSelectedTab("Work")}
             className={`text-black font-bold no-underline hover:text-blue-600 hover:underline hover:decoration-2 hover:underline-offset-4 ${
               selectedTab === "Work" ? "text-orange-500" : ""
@@ -63,7 +63,7 @@ const Navbar = ({ selectedTab, setSelectedTab }) => {
         </div>
         <div>
           <a
-            href="#"
+            href="/experience"
             onClick={() => setSelectedTab("Experience")}
             className={`text-black font-bold no-underline hover:text-blue-600 hover:underline hover:decoration-2 hover:underline-offset-4 ${
               selectedTab === "Experience" ? "text-pink-500" : ""
@@ -74,7 +74,7 @@ const Navbar = ({ selectedTab, setSelectedTab }) => {
         </div>
         <div>
           <a
-            href="#"
+            href="/contact"
             onClick={() => setSelectedTab("Contact")}
             className={`text-black font-bold no-underline hover:text-blue-600 hover:underline hover:decoration-2 hover:underline-offset-4 ${
               selectedTab === "Contact" ? "text-yellow-500" : ""
